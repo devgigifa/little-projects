@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gerador.css">
+    <title>QRCode</title>
+</head>
+
+<body>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+  <div class="form">
+    <h1>Gerador de QR code</h1>
+    <form>
+      <input type="url" id="website" name="website" placeholder="Digite a url: " required />
+      <button type="button" onclick="generateQRCode()">Gerar</button>
+      <button type="button" onclick="clearQRCode()">Limpar</button>
+      <button type="button" id="download-btn">Download</button>
+    </form>
+    <div id="qrcode-container">
+      <div id="qrcode" class="qrcode"></div>
+    </div>
+    <script type="text/javascript" src="gerador.js"></script>
+  </div>
+</body>
+
+</html>
